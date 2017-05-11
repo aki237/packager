@@ -308,3 +308,12 @@ void PWindow::on_actionAbout_triggered()
     PAbout pabt;
     pabt.exec();
 }
+
+void PWindow::on_actionSet_Monospaced_Font_toggled(bool checked)
+{
+    if (checked) {
+        ui->textEdit->setFont(QFont("monospace"));
+    } else {
+        ui->textEdit->setFont(QFont());
+    }
+}

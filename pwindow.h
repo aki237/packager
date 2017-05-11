@@ -41,6 +41,8 @@ private slots:
 
     void on_actionAbout_triggered();
 
+    void on_actionSet_Monospaced_Font_toggled(bool checked);
+
 private:
     Ui::PWindow *ui;
     FileList* qslm;
